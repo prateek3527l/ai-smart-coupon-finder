@@ -1,0 +1,71 @@
+code,category,product,website,discount,price,popularity,rating,expiry_days,constraints,is_verified
+PIZZAPARTY,pizza,dominos,dominos,40,400,92,4.6,10,"7 items + cashback",True
+ZING0539,pizza,dominos,dominos,33,500,88,4.5,10,"33% off above ₹399",True
+DOMNEW3,pizza,dominos,dominos,50,500,95,4.7,7,"50% off new users",True
+GRAB0539,pizza,dominos,dominos,33,600,85,4.4,10,"33% off above ₹499",True
+PIZZA80,pizza,dominos,dominos,20,400,80,4.3,10,"₹80 off above ₹299",True
+
+HUT125,pizza,pizzahut,pizzahut,25,500,85,4.4,10,"₹125 off above ₹500",True
+HUT300,pizza,pizzahut,pizzahut,40,700,90,4.5,10,"₹300 off above ₹600",True
+B1G3SIDES,pizza,pizzahut,pizzahut,40,600,80,4.3,10,"Buy 1 get 3 sides free",True
+COMBO799,pizza,pizzahut,pizzahut,25,799,78,4.2,10,"Combo starting ₹799",True
+
+SWIGGYIT,food delivery,swiggy,swiggy,35,400,85,4.4,10,"20–50% off select restaurants",True
+WELCOME50_SWIGGY,food delivery,swiggy,swiggy,50,300,90,4.5,10,"New users only",True
+AXIS125_SWIGGY,food delivery,swiggy,swiggy,25,500,80,4.3,10,"Axis card only",True
+ICICI100_SWIGGY,food delivery,swiggy,swiggy,20,500,78,4.2,10,"ICICI card only",True
+JUMBO,food delivery,swiggy,swiggy,25,500,75,4.2,10,"Large orders only",True
+PARTY,food delivery,swiggy,swiggy,25,1000,82,4.3,10,"₹250 off above ₹1000",True
+SWIGGYONE,food delivery,swiggy,swiggy,20,400,88,4.5,10,"Membership benefits",True
+
+WELCOME_ZOMATO,food delivery,zomato,zomato,50,300,90,4.5,10,"New users only",True
+HELLO_ZOMATO,food delivery,zomato,zomato,50,300,88,4.4,10,"First orders only",True
+ZOMPAYTM,food delivery,zomato,zomato,20,400,80,4.3,10,"Paytm wallet only",True
+ZOMGPAY,food delivery,zomato,zomato,20,400,80,4.3,10,"Google Pay only",True
+MASTERCARD_ZOMATO,food delivery,zomato,zomato,15,500,75,4.2,10,"Mastercard users",True
+VISA_ZOMATO,food delivery,zomato,zomato,15,500,75,4.2,10,"Visa users",True
+TRYNEW_ZOMATO,food delivery,zomato,zomato,35,400,85,4.4,10,"New restaurants",True
+ZOMATOGOLD,food delivery,zomato,zomato,15,400,88,4.5,10,"Membership benefit",True
+
+BKWELCOME,fast food,burger king,burgerking,30,229,90,4.5,10,"₹100 off first order",True
+KING50,fast food,burger king,burgerking,50,300,92,4.6,10,"50% off above ₹199",True
+KING250,fast food,burger king,burgerking,25,800,85,4.4,10,"25% off above ₹799",True
+CLASSICFREE,fast food,burger king,burgerking,20,229,80,4.3,10,"Free burger above ₹229",True
+PERIPERI299,fast food,burger king,burgerking,20,299,78,4.2,10,"Free fries Wed-Thu",True
+BKPARTY,fast food,burger king,burgerking,25,850,82,4.3,10,"₹200 off large orders",True
+BK99DEAL,fast food,burger king,burgerking,40,99,88,4.4,10,"2 burgers for ₹99",True
+STUNNER50,fast food,burger king,burgerking,30,50,85,4.3,10,"₹50 menu items",True
+FREEBURGER,fast food,burger king,burgerking,25,229,84,4.3,10,"Free burger new users",True
+
+MYNTRA300,fashion,myntra,myntra,30,900,88,4.5,10,"₹300 off above ₹899",True
+MYNTRAHALFPRICE,fashion,myntra,myntra,50,500,92,4.6,10,"First order",True
+MYNTRAEXCLUSIVE,fashion,myntra,myntra,30,300,85,4.4,10,"New users",True
+MYNTRASAVE,fashion,myntra,myntra,25,400,82,4.3,10,"25% off up to ₹200",True
+
+ZT10,fashion,puma,puma,70,3000,95,4.7,10,"60% + extra 10%",True
+NORETURN,fashion,puma,puma,5,2000,70,4.1,10,"Extra 5% off",True
+CJPUMA7,fashion,puma,puma,7,2500,75,4.2,10,"Extra 7% off",True
+APP20_PUMA,fashion,puma,puma,20,2000,85,4.4,10,"App only",True
+STUDENT10_PUMA,fashion,puma,puma,10,2000,80,4.3,10,"Students only",True
+
+APP15,fashion,nike,nike,15,4000,85,4.5,10,"App purchase",True
+STUDENT10_NIKE,fashion,nike,nike,10,4000,80,4.4,10,"Students/teachers",True
+BDAY10_NIKE,fashion,nike,nike,10,4000,78,4.3,10,"Birthday offer",True
+SALE40_NIKE,fashion,nike,nike,40,3000,90,4.6,10,"Sale items",True
+
+FIRST10,beauty,nykaa,nykaa,10,2000,80,4.4,10,"New users",True
+NYK10,beauty,nykaa,nykaa,10,1500,78,4.3,10,"Orders above ₹1500",True
+NYKAAGIFT,beauty,nykaa,nykaa,20,2500,82,4.4,10,"Free gift",True
+
+TIRA20,beauty,tira,tira,20,3000,85,4.5,10,"New users",True
+TIRAGIFT,beauty,tira,tira,15,3000,80,4.4,10,"Free gift",True
+
+LUXFIRST,beauty,tatacliq,tatacliq,20,5000,85,4.5,10,"₹500–₹1000 off",True
+WATCHOUT,beauty,tatacliq,tatacliq,15,4000,80,4.3,10,"Selected items",True
+
+SAMSUNG2000,electronics,samsung,samsung,10,20000,90,4.6,10,"₹2000 off",True
+SAMREF5,electronics,samsung,samsung,5,20000,85,4.5,10,"Referral code",True
+STUDENT10_SAMSUNG,electronics,samsung,samsung,10,20000,88,4.6,10,"Student offer",True
+
+MISTORE,electronics,xiaomi,mi,5,10000,80,4.4,10,"₹500 off",True
+MITOKEN,electronics,xiaomi,mi,8,10000,78,4.3,10,"Token redemption",True
