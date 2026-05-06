@@ -21,7 +21,7 @@ def get_ai_response(prompt: str) -> Optional[str]:
         return None
     
     # Construct API endpoint
-    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
     
     # Prepare request payload
     payload = {
