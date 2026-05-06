@@ -55,6 +55,11 @@ try:
         coupon_df['product'] = coupon_df['category']
         print("✓ Created 'product' column from 'category'")
 
+    # Ensure website_link column exists
+    if 'website_link' not in coupon_df.columns:
+        coupon_df['website_link'] = ''
+        print("✓ Created 'website_link' column with empty values")
+
     print("✅ Data cleaned successfully")
 
 except Exception as e:
@@ -178,7 +183,7 @@ Mention conditions clearly.
             chatbot_message = ai_reply
 
         # ==============================
-        # RESPONSE JSON - UPDATED (added score and constraints to best_coupon)
+        # RESPONSE JSON - UPDATED (added score, constraints, and website_link to best_coupon and top_3_coupons)
         # ==============================
         return jsonify({
             'success': True,
@@ -191,14 +196,16 @@ Mention conditions clearly.
                 'website': best.get('website'),
                 'product': best.get('category'),
                 'score': float(best.get('score', 0)),
-                'constraints': best.get('constraints', 'No minimum purchase required')
+                'constraints': best.get('constraints', 'No minimum purchase required'),
+                'website_link': best.get('website_link', '')   # NEW
             },
             'top_3_coupons': [
                 {
                     'code': c.get('code'),
                     'discount': float(c.get('discount', 0)),
                     'score': float(c.get('score', 0)),
-                    'rating': float(c.get('rating', 0))
+                    'rating': float(c.get('rating', 0)),
+                    'website_link': c.get('website_link', '')   # NEW
                 }
                 for c in recommendations['top_3_coupons']
             ]
