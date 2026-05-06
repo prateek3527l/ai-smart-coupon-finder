@@ -356,6 +356,25 @@
             font-size: 14px;
         }
 
+        /* Visit Website Button */
+        .visit-btn {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .visit-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
         /* Scrollbar */
         .chat-messages::-webkit-scrollbar {
             width: 8px;
@@ -516,6 +535,15 @@
             return new Promise(resolve => setTimeout(resolve, ms));
         }
 
+        // Open website function
+        function openWebsite(url) {
+            if (url && url !== "") {
+                window.open(url, "_blank");
+            } else {
+                alert("Website link not available");
+            }
+        }
+
         // formatBestCouponHTML function - converts raw score (0-1) to percentage
         function formatBestCouponHTML(coupon) {
             const score = coupon.score || 0;
@@ -525,6 +553,7 @@
             const discount = coupon.discount || 0;
             const code = coupon.code || 'N/A';
             const constraints = coupon.constraints || 'No minimum purchase required';
+            const websiteLink = coupon.website_link || '';
 
             return `
                 <div class="best-coupon-card">
@@ -540,6 +569,9 @@
                     </div>
                     <div>⭐ Rating: ${'★'.repeat(Math.floor(rating))}${'☆'.repeat(5 - Math.floor(rating))} (${rating.toFixed(1)})</div>
                     <div>📈 Popularity: ${popularity}%</div>
+                    <button onclick="openWebsite('${escapeHtml(websiteLink)}')" class="visit-btn">
+                        🌐 Visit Website
+                    </button>
                 </div>
             `;
         }
@@ -622,6 +654,7 @@
                             const discount = coupon.discount || 0;
                             const rating = coupon.rating || 0;
                             const code = coupon.code || 'N/A';
+                            const websiteLink = coupon.website_link || '';
 
                             topCouponsHtml += `
                                 <div class="top-coupon-card">
@@ -634,6 +667,9 @@
                                         </div>
                                         <div style="font-size: 12px; margin-top: 4px;">Score: ${scorePercent}%</div>
                                     </div>
+                                    <button onclick="openWebsite('${escapeHtml(websiteLink)}')" class="visit-btn">
+                                        🌐 Visit Website
+                                    </button>
                                 </div>
                             `;
                         });
